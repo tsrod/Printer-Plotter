@@ -3,7 +3,7 @@ EPSON EM-469
 R=5,3 ohm Ω
 
 WITING
-|| |=> blue wire
+|| => blue wire
 
 ||  | | |
 ||  | | |
