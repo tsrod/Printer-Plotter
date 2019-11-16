@@ -1,0 +1,15 @@
+EPSON EM-469
+
+R=5,3 ohm Ω
+
+WITING
+|| |=> blue wire
+
+||  | | |
+||  | | |
+ A  B A B
+
+
+ Steps/rev = 96 Steps ==> 3,75 °/step
+
+ 
