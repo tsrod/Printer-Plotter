@@ -1,0 +1,6 @@
+
+Sense Resistor => R100 ==> 0,1 Ω OHM
+
+Vref=8*Imax*Rcs => Vref=8*Imax*0,1
+
+I=1A ==> 0,8V 
