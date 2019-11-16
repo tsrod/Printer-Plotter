@@ -3,4 +3,8 @@ Sense Resistor => R100 ==> 0,1 Ω OHM
 
 Vref=8*Imax*Rcs => Vref=8*Imax*0,1
 
-I=1A ==> 0,8V 
+I=1A ==> 0,8V
+
+
+
+Enable Input (ENABLE). This input turns on or off all of the FET outputs. When set to a logic high, the outputs are disabled. When set to a logic low, the internal control enables the outputs as required. The translator inputs STEP, DIR, and MSx, as well as the internal sequencing logic, all remain active, independent of the ENABLE input state.
