@@ -1,0 +1,17 @@
+EPSON EM-434
+
+R=6,4 ohm Ω
+
+WITING
+|| |=> blue wire
+
+||  | | |
+||  | | |
+ A  B A B
+
+
+ Steps/rev = 200 Steps ==> 1,8 °/step
+
+
+pulse time ~500 microseconds
+5000 - too noisy
