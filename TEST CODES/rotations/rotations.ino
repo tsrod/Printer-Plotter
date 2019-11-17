@@ -10,16 +10,14 @@
 // Define Constants
 
 // Connections to A4988
-const int dirPin = 5;  // Direction   X=5 Y=6 Z=7
-const int stepPin = 2; // Step        X=2 Y=3 Z=4
-
-int c=0;
+const int dirPin = 7;  // Direction   X=5 Y=6 Z=7
+const int stepPin = 4; // Step        X=2 Y=3 Z=4
 
 // Motor steps per rotation
 const int STEPS_PER_REV = 200;
 
 void setup() {
-  Serial.begin(9600);
+
   // Setup the pins as Outputs
   pinMode(stepPin,OUTPUT);
   pinMode(dirPin,OUTPUT);
@@ -30,13 +28,26 @@ void loop() {
   digitalWrite(dirPin,HIGH);
 
   // Spin motor one rotation slowly
+  for(int x = 0; x < STEPS_PER_REV; x++) {
     digitalWrite(stepPin,HIGH);
-    delayMicroseconds(2000);
+    delayMicroseconds(50);
     digitalWrite(stepPin,LOW);
-    delayMicroseconds(2000);
-    c=c+1;
-    Serial.println(c);
+    delayMicroseconds(50);
+  }
 
+  // Pause for one second
+  delay(1000);
+
+  // Set motor direction counterclockwise
+  digitalWrite(dirPin,LOW);
+
+  // Spin motor two rotations quickly
+  for(int x = 0; x < (STEPS_PER_REV ); x++) {
+    digitalWrite(stepPin,HIGH);
+    delayMicroseconds(50);
+    digitalWrite(stepPin,LOW);
+    delayMicroseconds(50);
+  }
 
   // Pause for one second
   delay(1000);
